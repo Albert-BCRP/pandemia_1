@@ -75,7 +75,6 @@ class Group(BaseGroup):
                 p.payoff = (c(50) - c(p.precaution) * c(p.precaution) - c(70) * c(p.contagiado))
                 p.pago_acumulado = p.in_round(self.round_number - 1).pago_acumulado + p.payoff
 
-
 class Player(BasePlayer):
 
     prob_intrinseca = models.IntegerField()
